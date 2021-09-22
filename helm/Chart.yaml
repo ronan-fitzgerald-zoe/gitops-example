@@ -1,0 +1,9 @@
+---
+apiVersion: v2
+name: monitoring
+version: 0.1.0
+description: Our chart for installing the prometheus operator and any related resource to bring up our full monitoring stack
+dependencies:
+- name: kube-prometheus-stack
+  version: "^18.0.5"
+  repository: "https://prometheus-community.github.io/helm-charts"
